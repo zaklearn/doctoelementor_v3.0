@@ -304,8 +304,6 @@ st.markdown(
     '<div class="subtitle">Professional Document Conversion Tool</div>', 
     unsafe_allow_html=True
 )
-st.markdown('<div class="logo-container"><h2 style="color: #1e40af; margin: 0;">Word to Elementor</h2></div>', unsafe_allow_html=True)
-
 # Reset button if conversion exists
 if st.session_state.converted:
     col_reset1, col_reset2, col_reset3 = st.columns([1, 1, 1])
