@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-app_optimized.py - Word to Elementor Converter
+Word to Elementor Converter
 Professional Document Conversion Tool
 """
 
@@ -28,7 +28,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
     menu_items={
         'Get Help': 'https://bendatainsights.cloud',
-        'Report a bug': "mailto:contact@bendatainsights.cloud",
+        'Report a bug': "mailto:contact@hbnconsulting.co.uk",
         'About': "Professional Word to Elementor Conversion Tool v3.0"
     }
 )
@@ -273,7 +273,7 @@ import base64
 from pathlib import Path
 
 # --- CONFIGURATION ---
-LOGO_PATH = "assets/logo.png"  # Assurez-vous que ce chemin est correct
+LOGO_PATH = "logo.png"  # Assurez-vous que ce chemin est correct
 
 # --- FONCTION POUR ENCODER L'IMAGE ---
 def get_image_as_base64(file):
@@ -304,14 +304,6 @@ st.markdown(
     '<div class="subtitle">Professional Document Conversion Tool</div>', 
     unsafe_allow_html=True
 )
-
-#st.image('assets/logo.png', width=90)
-#st.markdown('<div class="main-title">Word to Elementor Converter</div>', unsafe_allow_html=True)
-#st.markdown('<div class="subtitle">Professional Document Conversion Tool</div>', unsafe_allow_html=True)
-#if os.path.exists('assets/logo.png'):
-
-#else:
-#st.markdown('<div class="logo-container"><h2 style="color: #1e40af; margin: 0;">Word to Elementor</h2></div>', unsafe_allow_html=True)
 st.markdown('<div class="logo-container"><h2 style="color: #1e40af; margin: 0;">Word to Elementor</h2></div>', unsafe_allow_html=True)
 
 # Reset button if conversion exists
