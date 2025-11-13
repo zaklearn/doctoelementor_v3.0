@@ -19,15 +19,10 @@ from word_processor import extract_document_structure, save_images
 from json_builder import build_elementor_json
 from credits import show_credits_sidebar, show_credits_footer, show_about_page
 import analytics
-LOGO_PATH = "logo.png"
-try:
-    logo_as_pil = Image.open(LOGO_PATH)
-except FileNotFoundError:
-    st.error(f"Le fichier logo est introuvable au chemin : {LOGO_PATH}")
-    logo_as_pil = "📄"
+
 st.set_page_config(
     page_title="Word to Elementor Converter",
-    page_icon=logo_as_pil,
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
