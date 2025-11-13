@@ -19,7 +19,7 @@ from word_processor import extract_document_structure, save_images
 from json_builder import build_elementor_json
 from credits import show_credits_sidebar, show_credits_footer, show_about_page
 import analytics
-
+LOGO_PATH = "logo.png"
 try:
     logo_as_pil = Image.open(LOGO_PATH)
 except FileNotFoundError:
